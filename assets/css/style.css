@@ -6,42 +6,42 @@
 
 @font-face {
   font-family: 'Poppins-Bold';
-  src: url('../../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('../../fonts/Poppins-Bold.woff') format('woff'), url('../../fonts/Poppins-Bold.ttf') format('truetype'), url('../fonts/Poppins-Bold.svg#Poppins-Bold') format('svg');
+  src: url('../fonts/Poppins-Bold.ttf') ;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins-ExtraBold';
-  src: url('../../fonts/Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../../fonts/Poppins-ExtraBold.woff') format('woff'), url('../../fonts/Poppins-ExtraBold.ttf') format('truetype'), url('../../fonts/Poppins-ExtraBold.svg#Poppins-ExtraBold') format('svg');
+  src: url('../fonts/Poppins-ExtraBold.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins-Light';
-  src: url('../../fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'), url('../../fonts/Poppins-Light.woff') format('woff'), url('../../fonts/Poppins-Light.ttf') format('truetype'), url('../../fonts/Poppins-Light.svg#Poppins-Light') format('svg');
+  src: url('../fonts/Poppins-Light.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins-Medium';
-  src: url('../../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'), url('../../fonts/Poppins-Medium.woff') format('woff'), url('../../fonts/Poppins-Medium.ttf') format('truetype'), url('../../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+  src: url('../fonts/Poppins-Medium.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins-Regular';
-  src: url('../../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/Poppins-Regular.woff') format('woff'), url('../../fonts/Poppins-Regular.ttf') format('truetype'), url('../../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+  src: url('../fonts/Poppins-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins-SemiBold';
-  src: url('../../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'), url('../../fonts/Poppins-SemiBold.woff') format('woff'), url('../fonts/Poppins-SemiBold.ttf') format('truetype'), url('../../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+  src: url('../fonts/Poppins-SemiBold.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -274,7 +274,7 @@ input:active {
   color: #fff;
   position: relative;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold;font-family: 'Poppins-Medium';
 }
 
 .banner-section header .navbar-light .navbar-nav .nav-link::before {
@@ -602,7 +602,7 @@ form hr {
 
 .testimonia_section .testimonial .description::before {
   content: "\f10d";
-  font-family: "fontawesome";
+  font-family: "Font Awesome 5 Brands";
   font-weight: 900;
   position: absolute;
   top: -70px;
@@ -633,29 +633,29 @@ form hr {
 
 .testimonia_section button.owl-prev span,
 .testimonia_section button.owl-next span {
-  display: none;
+  display: block;
 }
 
-.testimonia_section button.owl-prev::after {
-  content: "\f053";
+.testimonia_section button.owl-prev span {
+  
   display: block;
   height: 40px;
   width: 40px;
   background-color: #c7861b;
-  font-family: 'FontAwesome';
+  font-family: "Font Awesome 5 Brands";
   color: #fff;
-  line-height: 40px;
+  line-height: 35px;
 }
 
-.testimonia_section button.owl-next::before {
+.testimonia_section button.owl-next span {
   content: "\f054";
   display: block;
   height: 40px;
   width: 40px;
   background-color: #c7861b;
-  font-family: 'FontAwesome';
+  font-family: "Font Awesome 5 Brands";
   color: #fff;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 .testimonia_section button.disabled::after,
@@ -1353,7 +1353,13 @@ input[type=number] {
   .testimonia_section .testimonial {
     padding: 80px 0 80px 265px;
   }
-
+  header .logo-img img {
+  position: relative;
+  z-index: 9;
+}
+.fixed .login-form {
+  display: none !important;
+}
   .dk-footer-box-info {
     position: static;
     margin-bottom: 50px;
@@ -1393,11 +1399,6 @@ input[type=number] {
 
   header .logo-img {
     width: 130px;
-  }
-
-  .login-form .form {
-    text-align: center;
-    margin-right: 0;
   }
 
   #banner-slider .owl-dots {
@@ -1818,14 +1819,28 @@ input[type=number] {
   .login-form {
     padding-top: 7px;
     padding-bottom: 7px;
-    width: 220px;
+    width: 100%;
     position: absolute;
-    left: 55%;
-    transform: translateX(-45%);
+    left: 0;
+    transform: none;
     border-bottom: none;
-    top: 5px;
     z-index: 9;
+    top: 0;
+padding-top: 0;
   }
+  .login-form .form .theme-btn {
+  padding: 3px 10px !important;
+  font-size: 14px;
+  min-width: inherit !important;
+  text-transform: uppercase;
+}
+  .login-form .form {
+  padding: 5px 20px;
+  margin: 0;
+  width: 100%;
+max-width: 100%;
+border-radius: 0;
+}
 
   header.fixed .login-form {
     display: block;
@@ -1865,11 +1880,7 @@ input[type=number] {
 
   }
 
-  .login-form {
-    width: 130px;
-    top: 10px;
-    left: 58%;
-  }
+  
 
   .header_theme_btn {
     background-color: #c7861b;
@@ -4393,4 +4404,27 @@ header.fixed .navbar .logo-img img {
 }
 .ml-auto, .mx-auto {
   margin-left: auto !important;
+}
+
+
+@media (max-width: 580px) {
+  .download_sec {
+  width: 100%;
+}
+.download_platform_section ul li {
+  width: calc(95% / 2);
+  margin: 0;
+}
+.download_platform_section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.shadow-boxx .tab button {
+  font-size: 14px;
+}
+.shadow-boxx .tab {
+  display: flex;
+}
+
 }
