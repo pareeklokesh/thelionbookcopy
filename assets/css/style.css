@@ -4634,3 +4634,44 @@ header.fixed .navbar .logo-img img {
 .privacy_section .content_wrp li, .allpagesection .content_wrp li {
   color: #000 !important;font-size: 16px;
 }
+
+
+/*Home*/
+
+.appicon .col-md-3 {
+  margin-top: 25px;
+}
+.appicon .col-md-3 img {
+  border-radius: 3px;
+}
+.appicon .w-100 {
+  overflow: hidden;position: relative;
+}
+.appicon * {
+  transition: all .4s linear;
+}
+.downloadapplink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+display: none;
+}
+.downloadapplink a {
+  text-transform: uppercase;
+  border: 1px solid #fff;
+padding: 5px 15px;
+border-radius: 3px;
+}
+.appicon .w-100:hover .downloadapplink {
+  display: flex;
+}
+.appicon .w-100:hover img {
+  transform: scale(1.1);
+}
