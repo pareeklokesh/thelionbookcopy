@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lionbook</title>
+ 
+
+  
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/flickity.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+
+
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/flickity.min.js"></script>
+
+<style>
+  .navbar-nav_custom .nav-item .nav-link {
+    color: white;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .navbar-collapse_custom .nav-item .nav-link {
+    color: white;
+    font-size: 12px;
+  }
+
+  .navbar-collapse_custom .nav-item .dropdown-menu .dropdown-item {
+    font-size: 12px;
+    /*padding: 5px 10px;*/
+    background: #000;
+    color: white;
+  }
+
+  .navbar-collapse_custom .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #172633;
+    color: white;
+  }
+
+  .navbar-nav_custom .nav-item .nav-link:hover {
+    background-color: #172633;
+  }
+
+  .navbar-collapse_custom .nav-item .dropdown-menu {
+    padding: 0;
+  }
+
+  .navbar-nav_custom .nav-item .dropdown-menu {
+    background-color: #071929;
+    padding: 0;
+  }
+
+  .navbar-nav_custom .nav-item .dropdown-menu .dropdown-item {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: white;
+  }
+
+  .navbar-nav_custom .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #172633;
+    color: white;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+  }
+
+  .custom-navbar {
+    border-bottom: none;
+    z-index: 999;
+  }
+
+  nav li {
+    margin: 5px 5px 0px 0px;
+  }
+
+  /*nav li .form_login{
+    margin-top: 2px;
+  }*/
+  nav li .form_login .field_1 {
+    padding: 3px;
+    font-size: 14px;
+    border: 1px solid #cf9e41;
+  }
+
+  nav li .form_login .new_btn {
+    background-color: #cf9e41;
+    color: white;
+    border: none;
+    padding: 3px 12px;
+    font-size: 15px;
+    border-radius: .25rem;
+  }
+
+
+
+  nav li .btn_btn_login {
+    margin-right: 5px;
+  }
+
+  /*nav li .btn{
+    padding: 0px 12px;
+  }*/
+  /*nav li .btn_btn_register{
+    margin-top: -40px;
+    float: right;
+  }*/
+  nav img {
+    width: 100% !important;
+    /*margin-bottom: -50px;*/
+  }
+
+  nav button:focus {
+    outline: unset;
+  }
+
+  nav .logo_fixed {
+    z-index: 999;
+  }
+
+  .navbar-brand {
+    padding-bottom: 0;
+  }
+
+  .carousel-inner .no_show {
+    opacity: 0;
+  }
+
+  .row_margin {
+    margin-bottom: 10px !important;
+  }
+
+  .submit_button {
+    color: white;
+    background-color: #cf9e41;
+  }
+
+  .menu_dropdown {
+    top: 94%;
+    left: -91px;
+    border: none;
+    border-radius: 0;
+  }
+
+  /* notification_modal css start */
+  #notification_modal .modal-dialog {
+    margin: 0px;
+    margin-top: 43px;
+    float: right;
+    width: 100%;
+  }
+
+  #notification_modal .modal-dialog .modal-content {
+    border: unset;
+  }
+
+  #notification_modal .modal-header {
+    padding: 5px 15px;
+  }
+
+  #notification_modal .modal-header h5 {
+    width: 100%;
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  #notification_modal .modal-body {
+    padding: 0;
+  }
+
+  #notification_modal .modal-body .nav-tabs {
+    border-bottom: unset;
+  }
+
+  #notification_modal .modal-body .nav-tabs .nav-item {
+    width: 50%;
+  }
+
+  #notification_modal .modal-body .nav-tabs .nav-item .nav-link {
+    text-align: center;
+    padding: 5px 0px;
+    color: black;
+    border: none;
+  }
+
+  #notification_modal .modal-body .nav-tabs .nav-item .active {
+    background-color: #19234e;
+    color: white;
+  }
+
+  #notification_modal .modal-body .tab-content {
+    background-color: #f3f3f3;
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+
+  #notification_modal .modal-body .tab-content .tab-pane {}
+
+  #notification_modal .modal-body .tab-content .notification_new_row {
+    cursor: pointer;
+    color: black;
+    padding: 5px 0px;
+  }
+
+  #notification_modal .modal-body .tab-content .notification_new_row i {
+    margin-top: 3px;
+  }
+
+  #notification_modal .modal-body .tab-content .notification_new_row p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #notification_modal .modal-body .tab-content .notification_new_row small {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  #notification_modal .modal-body .tab-content hr {
+    background-color: #cccccc;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .message_accodian {
+    background-color: #e2e2e2;
+    padding: 5px;
+  }
+
+  .message_accodian p {
+    margin-bottom: 0;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+  }
+
+  /* notification_modal css end */
+
+  /* bonus_modal css start */
+  .modal_one_right .modal-dialog {
+    margin: 0px;
+    margin-top: 43px;
+    float: right;
+    width: 100%;
+  }
+
+  .modal_one_right .modal-dialog .modal-content {
+    border: unset;
+  }
+
+  .modal_one_right .modal-header {
+    padding: 5px 15px;
+  }
+
+  .modal_one_right .modal-header h5 {
+    width: 100%;
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .modal_one_right .modal-body {
+    padding: 0;
+  }
+
+  .modal_one_right .modal-body button:focus {
+    outline: unset;
+  }
+
+  #bonus_modal .modal-body .nav-tabs {
+    border-bottom: unset;
+  }
+
+  #bonus_modal .modal-body .nav-tabs .nav-item {
+    width: 50%;
+  }
+
+  #bonus_modal .modal-body .nav-tabs .nav-item .nav-link {
+    text-align: center;
+    padding: 5px 0px;
+    color: black;
+    border: none;
+  }
+
+  #bonus_modal .modal-body .nav-tabs .nav-item .active {
+    background-color: #19234e;
+    color: white;
+  }
+
+  #bonus_modal .modal-body .tab-content {
+    background-color: #f3f3f3;
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_new_row {
+    color: black;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_new_row p {
+    margin-bottom: 0;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_new_row i {
+    width: 10%;
+    padding-top: 7px;
+    color: #155a6f;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_new_row .p1 {
+    width: 30%;
+    padding-top: 3px;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_new_row .p2 {
+    width: 15%;
+    padding-top: 3px;
+    color: red;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_new_row .p3 {
+    width: 32%;
+    padding-top: 3px;
+    color: green;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_new_row .dropdown_claim {
+    width: 13%;
+    font-size: 24px;
+    padding-top: 0px;
+  }
+
+  #bonus_modal .modal-body .tab-content hr {
+    background-color: #cccccc;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian {
+    background-color: #e2e2e2;
+    padding: 5px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian p {
+    margin-bottom: 0;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_1 {
+    width: 28%;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_1 i {
+    padding-top: 5px;
+    color: #155a6f;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_1 .p1 {
+    padding-top: 2px;
+    font-weight: 500;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_2 {
+    width: 52%;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_2 .p2 {
+    font-weight: 500;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_2 .p3 {
+    font-weight: 500;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_2 .span1 {
+    font-weight: 400;
+    color: red;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_2 .span2 {
+    font-weight: 400;
+    color: green;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_3 {
+    width: 20%;
+    padding-top: 8px;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian .column_3 button {
+    background-color: #155a6f;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #155a6f;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian_promo {
+    padding: 10px 0px;
+    background-color: #155a6f;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian_promo .promo_field {
+    font-size: 14px;
+    border: 0px solid #ffffff;
+    border-radius: 5px;
+    padding-left: 5px;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_accodian_promo .claim_btn {
+    font-size: 12px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    padding: 3px 8px;
+    font-weight: 600;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_benefits_new_row {
+    color: black;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_benefits_new_row p {
+    margin-bottom: 0;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_benefits_new_row .p1 {
+    width: 30%;
+    padding-top: 3px;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_benefits_new_row .p2 {
+    width: 25%;
+    padding-top: 3px;
+    color: red;
+  }
+
+  #bonus_modal .modal-body .tab-content .bonus_benefits_new_row .p3 {
+    width: 45%;
+    padding-top: 3px;
+    color: green;
+  }
+
+  .Put_Promocode {
+    color: red;
+    font-weight: 600;
+    background-color: white;
+  }
+
+  .Promocode_Sucessfully {
+    color: #06ab0b;
+    font-weight: 600;
+    margin-top: 2px;
+    /*background-color: white;*/
+  }
+
+  .Promocode_incorrect {
+    color: red;
+    font-weight: 600;
+    background-color: white;
+  }
+
+  /* bonus_modal css end */
+
+
+
+  .required:after {
+    content: " *";
+    color: red;
+  }
+
+  .font_sz {
+    font-size: 14px;
+  }
+
+  ::-webkit-input-placeholder {
+
+    font-size: 14px;
+  }
+
+  ::-moz-placeholder {
+
+    font-size: 14px;
+  }
+
+  :-ms-input-placeholder {
+
+    font-size: 14px;
+  }
+
+  ::placeholder {
+
+    font-size: 14px;
+  }
+
+  .ph_number {
+    width: 80% !important;
+  }
+
+  .anchorStyle {
+    text-decoration: none;
+    color: #808099;
+    padding-top: 18px !important;
+  }
+
+  .anchorStyle a {
+    text-decoration: none;
+    color: #808099;
+  }
+
+  .fixedfooter {
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    background-color: #22222c;
+    position: absolute;
+  }
+
+  .subactive {
+    background-color: #0e4454;
+    color: #FFFF !important;
+  }
+
+  .bonus_cus_img {
+    height: 20px;
+    width: 30px;
+    max-width: 100%;
+  }
+
+  .game_details {
+    background-color: #07192900 !important;
+  }
+
+  .top_bdr .navbar-nav_custom {
+    padding: 49px 0px 30px 0px;
+  }
+
+  @media  screen and (max-width: 767px) {
+    .top_bdr .navbar-nav_custom {
+      padding: 0px 0px 0px 0px;
+    }
+
+    header .bg-light li {
+      /* margin: 0px; */
+      /* margin: 3px 10px !important; */
+      font-family: 'Arial';
+      border-bottom: 0.7px solid slategrey;
+      border-bottom-width: thin;
+    }
+  }
+.content_wrp li {
+  font-size: 16px;
+  color: black !important;
+  padding: 0 0 0 0 !important;
+  margin: 10px 0;
+  list-style-type: disc;
+}
+  
+</style>
+</head>
+
+<body class="aboutus-page">
+  
+<section class="banner-section">
+  <header>
+    <div class="container">
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo-img" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="fa fa-home menu-fa"></span>Home <Home class="sr-only">(current)</Home></a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link" href="promotion.html">
+                <span class="fa fa-gift menu-fa"></span> Promotion</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link" href="about-us.html">
+                <span class="fa fa-users menu-fa"></span> About Us</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link" href="download-app.html">
+                <span class="fa fa-download menu-fa"></span> Download</a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" href="contact-us.html">
+                <span class="fa fa-mobile menu-fa"></span>Contact Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="howtoplay.html">
+                <span class="fa fa-play menu-fa"></span>How To Play</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+  
+</section>
+
+<section class="banner_content" style="background:url('assets/img/bannerab.png');">
+  
+</section>
+
+
+<section class="how-to-play-section text-justify">
+    <div class="container ">
+        <div class="site-heading">
+            <h2><span class="span_heading">LEARN AND PLAY </span> RUMMY WITH TAASHCLUB</h2>
+
+        </div>
+        <div class="row shadow-box">
+            <div class="col-md-12">
+                <div class="content_wrapperh">
+                    <p><strong>Online Rummy </strong> is a simple card game to play and it’s easy to learn too. Indian rummy can be played both on <strong> 2 player tables or 6 player tables </strong> . It is a <strong> Game of Skill </strong>; the half battle won when you learn the basics of the game. If you're trying to find a reliable and safe platform to find out the way to play and learn rummy card games then you're at the right place.</p>
+                    <p>These are the guidelines for you to follow after which you not only will learn how to play rummy games but also become an expert in this game.</p>
+
+                    <p class="cn_bold2 pt-3" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">
+                        HOW TO PLAY RUMMY GAME
+                    </p>
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jf4XtTeP4x8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                        <strong> Rummy </strong> is a simple card game that is played with two or more players. It requires 2 decks of cards if the number of players exceeds five. First player at a table arranges the cards which are dealt into predefined combinations and submits the melded cards. Your primary aim is to be the first players as the rest of the players accumulate points based on the cards in their hands. The player who has the least number of points at the end of a game wins the game.
+                    </p>
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">RUMMY CARD GAME RULES -</p>
+                    <ul class="content_wrp position-relative">
+                        <li>
+                            Thirteen ranks of each of the four suits and additional 2 Jokers are included in 52 cards deck.
+                        </li>
+                        <li>
+                            Four card suits are: Clubs (♣), Diamonds (♦), Hearts (♥) and Spades (♠)
+                        </li>
+                        <li>
+                            Cards in each suit are Ace, 2, 3, 4, 5, 6, 7, 8, 9, and 10, Jack, Queen, and King. Here face cards are Jack, Queen and King are and Ace can be used either as 1 or as a face card when making the sequences.
+                        </li>
+                        <li>
+                            Joker: Jokers act as a replacement or substitute for any card in melding sets or sequences.
+                        </li>
+                        <li>
+                            Points associated with cards: Face cards – 10 points are associated with each face card and the rest of the cards have points according to the number printed. No points are associated with Printed Jokers or Wild Jokers.
+                        </li>
+
+                    </ul>
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">How to Play on The Taash Club</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Although the game on <strong> The TaashClub </strong> has adequate pointers on the table that tells you about each action you may take, but below is a quick guide on how to play rummy on a table online.</p>
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Picking Cards Up:</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                        You have picked two cards up from options namely– the closed deck or the open deck.
+                    </p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                        <strong style="text-decoration: underline;"> Closed Deck </strong>: The remaining cards from the deck which has not been dealt with by the players are closed deck. The topmost card on the deck, is unknown to the players.
+                    </p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                        <strong style="text-decoration: underline;"> Open Deck </strong>: The pile of cards discarded per player per round is an open deck, these cards are visible to the players.
+                    </p>
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Rules for picking up cards:</p>
+                    <ul class="content_wrp position-relative">
+                        <li>
+                            You can pick only one card at a time when it is your turn.
+                        </li>
+                        <li>You can only pick the topmost card from Closed Deck or Open Deck, you can choose the pile.</li>
+                    </ul>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Card Combinations</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">There are two types of winning card combinations in a game of rummy when you finally meld your cards while placing a Show:</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Sequence/Runs</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">When you have 3 or more cards of the same suit in consecutive order.</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">For Example: Jack of Diamonds, Queen of Diamonds and King of Diamonds and can together form a sequence -J♦Q♦K♦
+                        Similarly Three of Spades, Four of Spades, Five of Spades, and Six of Spades can together form a sequence - 3♥ 4♥ 5♥ 6♥</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Sets/Trails</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">When you have 3 or more cards of the same rank but of different suits, you cannot use two cards of the same value in a single set.</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">For Example: Jack of Clubs, Jack of Spades and Jack of Hearts can together form a set - J♣J♠J♥</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Similarly, Eight of Diamonds, Eight of Clubs, Eight of Spades and Eight of Hearts can together form a set -&nbsp;8♦8♣8♠8♥</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Printed Joker &amp; Wild Joker</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Jokers can be termed as wild cards as they play a very important role in the way your rummy game proceeds and in melding your cards as soon as possible.</p>
+
+                    <p class="cn_regular">There are 2 types of Jokers in Rummy namely– Printed Joker and Wild Joker.</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Printed Joker</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Every deck of cards 52 cards has 2 extra cards which are known as Printed Jokers and they can be used to make sequences or sets once a pure sequence has been formed</p>
+
+                    <img src="assets/img/Printed-Joker.png">
+
+
+                    <p class="cn_bold2 pt-5" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Using Jokers to form Sequence/Sets</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Below is how a Printed Joker can be used to form sequences and sets:</p>
+                    <img src="assets/img/sequence.png">
+
+                    <p class="cn_regular pt-5" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Forming an sequence with Printed Joker</p>
+                    <img src="assets/img/sequence-printed-joker.png">
+
+                    <p class="cn_regular pt-5" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Forming an set with Printed Joker</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Sort Function</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">In <strong> The TaashClub </strong> the cards are distributed randomly between all the opponents and appear in the fashion as shown below. You can easily arrange your cards by hitting the sort button. This feature sorts the cards according to their suits in increasing order of their ranks as shown. Using Sort makes it easier for the user to have a quicker understanding of what cards they have, strategize and decide how they want to proceed with the game.</p>
+                    <img src="assets/img/card-serve.png">
+
+                    <p class="cn_regular pt-2">Cards as they are served on the table</p>
+                    <img src="assets/img/card-sort.png">
+
+                    <p class="cn_regular pt-2">Cards after using the Sort feature</p>
+
+                    <p class="cn_bold2 pt-5" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Declare</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Sometimes when your opponent has a valid meld and you need to declare your cards.</p>
+                    <img src="assets/img/hplay1.jpg">
+
+                    <p class="cn_regular pt-2">Do you think that you’re being watched? You can hide your cards by simply clicking on the Flip button. When you enable this your cards will no longer be visible to anyone until it’s your turn to play next.</p>
+                    <img src="assets/img/hplay2.jpg">
+
+                    <p class="cn_regular pt-2">Before Flip</p>
+
+
+                    <img src="assets/img/hplay3.jpeg">
+
+                    <p class="cn_regular pt-2">AfterFlip</p>
+                    <img class="pt-3" src="assets/img/hplay4.jpeg">
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Drop/Auto-Drop Function</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">As soon as players have been dealt, you may be able to drop a game if you’re displeased with the cards you’ve received. However, this will give you a bunch of undesirable points, so it needs to be a calculated risk! (Don’t try this on your first date!)</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Time-bound</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">The thing which separates it from offline rummy is that you cannot take your own sweet time for every move. This adds to the thrill of your skill!</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Discard a Card</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Select the card that you want to discard by clicking on it and hit the discard icon that appears above the card. The discarded card will then move to the Open deck and your opponent may either pick this card or pick a card from Closed Deck in their next turn.</p>
+
+                    <img src="assets/img/discard.png">
+
+                    <p class="cn_regular pt-2">Place a Show</p>
+
+                    <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Group Cards</p>
+                    <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">Select 2 or more cards that you want to group by clicking on them. After picking your combination, click on Group icon that appears on top of the cards.</p>
+
+                    <img src="assets/img/group.png">
+
+                    <p class="pt-2">These are the <strong> COMBINATIONS </strong> which are POSSIBLE AS PER THE ABOVE RULES TO DECLARE <strong> 13 CARDS IN RUMMY </strong> :</p>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="how-to-play-section text-justify">
+        <div class="container ">
+            <div class="site-heading">
+                <h2><span class="span_heading">LEARN AND PLAY </span> POKER WITH TAASHCLUB</h2>
+
+            </div>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RyEEhYLozEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="row shadow-box">
+                <div class="col-md-12">
+                    <div class="content_wrapperh">
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">
+                            WHAT IS HAND RANKING
+                        </p>
+
+
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                            The hand ranking is used to identify which hand is superior to the others. It is used to determine the best hand <strong> (combination of 5 cards) </strong> at showdown. Hand ranking rules remain the same in all variants of game. A hand of the highest category always beats any hand of the lowest category.
+                        </p>
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Poker Hand Ranking ( highest to lowest)</p>
+                        <div class="flex-container">
+                            <div>
+                                <img src="assets/img/royal-flush.png">
+
+                                <p>ROYAL FLUSH</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having five highest possible cards of the same suit in a sequence.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/straigth-flush.png">
+
+                                <p>STRAIGHT FLUSH</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having any five cards of the same suit in numerical order.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/four-of-kind.png">
+
+                                <p>FOUR OF A KIND</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having four cards of equal rank. The fifth card (kicker)can be of any value.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/fullhouse.png">
+
+                                <p>FULL HOUSE</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having three cards of the same rank with any two cards of another rank.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/flush.png">
+
+                                <p>FLUSH</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having any five cards of the same suit.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/straight.png">
+
+                                <p>STRAIGHT</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having five cards of different suits but in numerical order.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/three-of-kind.png">
+
+                                <p>THREE OF A KIND</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having three cards of the same rank and 2 unrelated cards.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/two-pair.png">
+
+                                <p class="different">TWO PAIR</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having two different pairs of cards and 1 unrelated card.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/pair.png">
+
+                                <p class="different">PAIR</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When a player is having two cards of the same rank and three unrelated cards.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/high-card.png">
+
+                                <p>HIGH CARD</p>
+
+                                <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;line-height:26px">
+                                    When comparing two such types of hands, the hand with the best-possible high card wins.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Poker Action on Table</p>
+                        <div class="flex-image">
+                            <div><img src="assets/img/call.png" style="height: 150px;width: 150px;"></div>
+                            <div><img src="assets/img/raise.png" style="height: 150px;width: 150px;"></div>
+                            <div><img src="assets/img/check.png" style="height: 150px;width: 150px;"></div>
+                            <div><img src="assets/img/bet.png" style="height: 150px;width: 150px;"></div>
+                            <div><img src="assets/img/fold.png" style="height: 150px;width: 150px;"></div>
+                        </div>
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;"><strong>CALL </strong>: </p>
+
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">It means matching the latest highest bet in a round</p>
+
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;"><strong>RAISE</strong>:</p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                            It means making a bigger bet than the highest bet made by another player in a betting round.
+                        </p>
+
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;"><strong>CHECK</strong>: </p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                            It means passing the action to the next player clockwise without putting money in the pot.
+                        </p>
+
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;"><strong>BET</strong>:</p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                            It means wagering money on the table.
+                        </p>
+
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;"><strong>FOLD</strong>: </p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                            It means stop playing the hand.
+                        </p>
+
+
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">Betting Rounds</p>
+
+                        <p>Regardless of the variant, the betting rules remains the same, these are following betting rounds -</p>
+
+                        <p class="cn_regular ">
+                            1. <strong>Pre-Flop</strong> -&nbsp;After dealing of cards, the first betting round (pre-flop) begins clockwise starting from the player sitting immediate left to the big blind (Under The Gun). The player makes his move on the basis of the strength of his hole cards. After his turn, the player left to him acts. The betting round continues the same way until everyone has either put equal chips in the pot or folds. In the this round, only the player at the big blind position can ‘check’.
+                        </p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                            2. <span style="font-weight:bold">Flop</span> -&nbsp;After the previous round, 3 community cards are dealt face-up on the table and the next round of betting commences.
+                        </p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+
+                            3. <span style="font-weight:bold">Turn</span> -&nbsp;One more card is dealt and the third round of betting begins.
+                        </p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">
+                            4. <span style="font-weight:bold">River</span> -&nbsp;The final community card is dealt and the final round of betting starts.
+                            At any point during the game, if all but one player fold their cards, the remaining player becomes the winner and at the time of Showdown, all active players reveal their cards and the best five-card combination wins the pot.
+                        </p>
+
+
+                        <img src="assets/img/00003.png" style="float:left; padding-right :10px;" />
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">TEXAS HOLD'EM POKER</p>
+
+                        <p class="cn_regular"><strong>Texas Hold'em </strong> is considered the most popular <strong>variant of poker</strong>. In this variant you need to form the best five-card combination out of the two hole cards dealt with you privately and five common cards dealt on the table.</p>
+                        <img src=" assets/img/0002.png" style="float:left; padding-right :10px;" />
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">POT LIMIT OMAHA</p>
+
+                        <p class="cn_regular"><strong>Omaha</strong> is a community card game. In Omaha you need to form the winning five-hand combination by using exactly 2 of your hole cards in hand with 3 of the community cards dealt on the table. In the <strong> pot limit variant of Omaha</strong>, the betting amount is capped to the money already present in the pot.</p>
+                        <img src="assets/img/0001.png" style="float:left; padding-right:10px;" />
+                        <p class="cn_bold2" style="padding-bottom:0px; margin-bottom:0px;font-size: 20px;">OMAHA HI-LOW</p>
+                        <p class="cn_regular" style="padding-bottom:0px; margin-bottom:0px; margin-top:0px;">This version of <strong> Omaha is a split pot game </strong>. In this variant a player forming the best high hand wins half of the pot and one who forms the best qualifying low hand as per a set of rules wins the other half of the money in the pot.</p>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</section>
+
+
+<footer id="dk-footer" class="dk-footer footer_pading footer_two" style="background-color: #211e1e;">
+    <div class="container " style="background-color: #211e1e;">
+        <div class="row">
+            <div class="col-md-12 col-lg-4" style="position:relative;">
+                <div class="dk-footer-box-info">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/img/logo.png" alt="footer_logo" class="img-fluid" style="width: 120px;">
+                    </a>
+                    <p class="footer-info-text white" style="text-align:justify">
+                        <strong> Launched in february 2021, TaashClub is the first gaming app to be launched in the <span style="color:#C7861B">Gworld
+                                Gaming Pvt Limited.</span> In a short period of time, TaashClub has evolved as the fastest growing
+                            Rummy and Poker platform in India. Providing a state-of-the-art gaming experience with
+                            complete digital security, you will have a wonderful experience with the Taash Club.!</strong>
+                    </p>
+                    <div class="footer-social-link">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-pinterest-p" style="color:#B7242A; background:white;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube" style="color:#F21B3F; background:white;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+
+            </div>
+            <!-- End Col -->
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+
+                    <!-- End Col -->
+                </div>
+                <!-- End Contact Row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <div class="section-heading">
+                                <h3>Useful Links</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+
+                            <ul>
+                                
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="termsandconditions.html">Terms and Conditions</a>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="refund-policy.html">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="responsible-play.html">Responsible Gaming</a>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                        <!-- End Footer Widget -->
+                    </div>
+
+                    <!-- End col -->
+                    <div class="col-md-12 col-lg-6">
+                        <!-- < class="footer-widget"> -->
+                        <div class="section-heading">
+                            <h3 style="font-size: 24px;color: #fff;position: relative;margin-bottom: 15px;max-width: -webkit-fit-content;max-width: -moz-fit-content;max-width: fit-content;">TaashClub</h3>
+                            <span class="animate-border border-black" style="margin:10px"></span>
+                            <div class="slider">
+                                <div class="slide">
+                                    <img src="assets/img/070.png" />
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/060.png" />
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/012.png" />
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/013.png" />
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/014.png" />
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/011.png" />
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/015.png" />
+                                </div>
+                            </div>
+                            <a href="#" class="underdots slider" style="display:none;"><img src="assets/img/googleplay.png"></a>
+                            <br>
+                        </div>
+
+                        
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+        <br><br>
+        <span style="float:left; display:inline-block;" class="col-md-6">
+            <p class="footer-info-text2 white" style="text-align:justify;">
+                <strong>Security and Certification</strong>
+            </p>
+            <ul>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/Fraud-Control.png" style="border-height: 35px;
+    width: 63px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/Know-Your-Limits.png" style="border-height: 35px;
+    width: 63px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/legal-Secure.png" style="border-height: 35px;
+    width: 63px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/responsible-play.png" style="border-height: 35px;
+    width: 63px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/18.png" style="border-radius: 5px;height: 35px;
+    width: 63px;"></a></li>
+            </ul>
+            
+        </span>
+        <!-- <div class="payment_section"> -->
+        <span style="display:inline-block;" class="col-md-6">
+            <p class="footer-info-text2 white" style="text-align:justify">
+                <strong>Secured Payments by</strong>
+            </p>
+            
+            <ul>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/payu.jpg" style="border-radius: 5px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/upi.jpg" style="border-radius: 5px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/netbanking.jpg" style="border-radius: 5px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/paytm.jpg" style="border-radius: 5px;"></a></li>
+                
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/visa.jpg" style="border-radius: 5px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/mastercard.jpg" style="border-radius: 5px;"></a></li>
+                <li style="display:inline-block;padding-right: 5px;padding-bottom:5px"><a href="#" class=""><img src="assets/img/rupay.jpg" style="border-radius: 5px;"></a></li>
+            </ul>
+        </span>
+        <!-- </div> -->
+        <div class="copyright" style="padding:0px;margin-top:0px">
+            <div class="container">
+                <div class="row">
+
+                    <!-- End Col -->
+                    <div class="col-md-12">
+                        <p style="color: #ec4646;text-align:center"><span style="margin-right: 10px;">
+                                <img style="width: 50px;" align:"left" src="assets/img/18.png">
+                            </span>
+                            <span style="color:#C7861B;font-size:15px;line-height:0px;text-align: justify;"><strong>We do not allow our players from Tamilnadu, Telangana, Odisha, Assam, Sikkim, Andhra Pradesh and Nagaland to play Taash Club</strong></span>
+                        </p>
+                    </div>
+                    <div class="col-md-12" style="text-align:center">
+                        <span><strong>Copyright &copy;  2022 , All Right Reserved by <span style="color:#C7861B">Gworld Gaming Pvt Limited.</span></strong></span>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark back-to-top-btn" title="Back to Top">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>
+        
+        
+</footer>
+
+
+
+
+<script type="text/javascript">
+    $(".navbar-toggler").click(function() {
+        $(".all-menu-navbar").toggleClass("visible");
+    })
+</script>
+
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+            $('.back-to-top-btn').fadeIn();
+            $("header").addClass("fixed");
+        } else {
+            $("header").removeClass("fixed");
+            $('.back-to-top-btn').fadeOut();
+        }
+    })
+
+</script>
+<script>
+    $('.slider').slick({
+        infinite: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+        fadeSpeed: 1000
+    });
+</script>
+</body>
+</html>
