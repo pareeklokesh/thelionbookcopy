@@ -94,8 +94,14 @@ header {
 
 header.fixed {
   position: fixed;
-  background-color: #211e1e;
+  background: linear-gradient(to bottom, #304700, #1b2800);
   z-index: 3;
+}
+#dk-footer, .dk-footer-box-info {
+  background: linear-gradient(to bottom, #304700, #1b2800) !important;
+}
+#dk-footer .container, .copyright {
+  background: transparent !important;
 }
 
 header.fixed .login-form {
@@ -270,6 +276,9 @@ input:active {
   position: relative;
   text-transform: uppercase;
   font-weight: bold;font-family: 'Poppins-Medium';
+  display: flex;
+align-items: center;
+font-size: 14px;
 }
 
 .banner-section header .navbar-light .navbar-nav .nav-link::before {
@@ -984,13 +993,14 @@ border-bottom: 1px solid #343434;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #2e2e2e;
-  border-color: #2e2e2e;
+  background: linear-gradient(to bottom, #304700, #1b2800);
   display: none;
   z-index: 999;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  color: #fff;
+  border-color: #fff;
 }
 
 .back-to-top .btn-dark:hover {
@@ -1771,7 +1781,7 @@ input[type=number] {
 
 .menu-fa {
   margin-right: 10px;
-  display: none !important;
+  display: block !important;
 }
 
 .fix-download-btn-sec {
@@ -2415,28 +2425,22 @@ dl {
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
   float: left;
-  /* border: none; */
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  /* font-size: 17px; */
   display: table-cell;
   width: 25%;
-  /* display: block; */
   padding: .5em;
-  background: #c7861b;
+  background: linear-gradient(to bottom, #304700, #1b2800);
   border: 1px solid #ddd;
   text-align: center;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
 }
-
-/* Change background color of buttons on hover */
 .tab button:hover {
   /* background-color: #ddd; */
   border-bottom-color: transparent;
@@ -2446,7 +2450,7 @@ dl {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: black;
+  background: black;
   color: #c7861b;
 }
 
