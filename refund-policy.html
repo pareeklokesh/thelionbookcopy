@@ -352,7 +352,11 @@ At any point during the period of interruption mentioned in the notification, th
             $('.back-to-top-btn').fadeOut();
         }
     })
-
+$(".back-to-top-btn").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+        })
 </script>
 <script>
     $('.slider').slick({
