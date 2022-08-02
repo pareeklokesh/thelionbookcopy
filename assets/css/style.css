@@ -94,11 +94,11 @@ header {
 
 header.fixed {
   position: fixed;
-  background: linear-gradient(to bottom, #304700, #1b2800);
+  background: linear-gradient(to bottom, #058e74, #0f2477);
   z-index: 3;
 }
 #dk-footer, .dk-footer-box-info {
-  background: linear-gradient(to bottom, #304700, #1b2800) !important;
+  background: linear-gradient(to bottom, #058e74, #0f2477) !important;
 }
 #dk-footer .container, .copyright {
   background: transparent !important;
@@ -346,8 +346,11 @@ form hr {
 }
 
 .span_heading {
-  color: #c7861b;
+  color: #f4027d;
   font-family: 'Poppins-semibold';
+  background: linear-gradient(to bottom, #058e74, #0f2477);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
 }
 
 .white {
@@ -466,8 +469,8 @@ form hr {
 }
 
 .secure_sec_card:hover .card_img {
-  border-left: 3px solid #4b49e4;
-  border-top: 3px solid #e46649;
+  border-left: 3px solid #058e74;
+border-top: 3px solid #0f2477;
   animation: rotate 5s infinite;
   transition: all 0.3s linear;
 }
@@ -558,7 +561,7 @@ form hr {
 }
 
 .testimonia_section .testimonial {
-  border-left: 3px solid #c7861b;
+  border-left: 3px solid #077674;
   padding: 100px 0 100px 275px;
   position: relative
 }
@@ -568,18 +571,18 @@ form hr {
   content: "";
   width: 320px;
   height: 55px;
-  border-right: 3px solid #c7861b;
+  border-right: 3px solid #0c4076;
   position: absolute;
   left: 0;
 }
 
 .testimonia_section .testimonial::before {
-  border-top: 3px solid #c7861b;
+  border-top: 3px solid #0c4076;
   top: 0;
 }
 
 .testimonia_section .testimonial::after {
-  border-bottom: 3px solid #c7861b;
+  border-bottom: 3px solid #0c4076;
   bottom: 0;
 }
 
@@ -645,7 +648,7 @@ form hr {
   display: block;
   height: 40px;
   width: 40px;
-  background-color: #c7861b;
+  background: linear-gradient(to bottom, #058e74, #0f2477) !important;
   font-family: "Font Awesome 5 Brands";
   color: #fff;
   line-height: 35px;
@@ -656,7 +659,7 @@ form hr {
   display: block;
   height: 40px;
   width: 40px;
-  background-color: #c7861b;
+  background: linear-gradient(to bottom, #058e74, #0f2477) !important;
   font-family: "Font Awesome 5 Brands";
   color: #fff;
   line-height: 35px;
@@ -835,7 +838,7 @@ form hr {
 .footer-widget li {
   margin-bottom: 12px;
   width:max-content;
-border-bottom: 1px solid #343434;
+border-bottom: 0;
 }
 .footer-widget p {
   margin-bottom: 27px;
@@ -993,7 +996,7 @@ border-bottom: 1px solid #343434;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(to bottom, #304700, #1b2800);
+  background: linear-gradient(to bottom, #058e74, #0f2477);
   display: none;
   z-index: 999;
   -webkit-transition: all 0.3s linear;
@@ -2433,7 +2436,7 @@ dl {
   display: table-cell;
   width: 25%;
   padding: .5em;
-  background: linear-gradient(to bottom, #304700, #1b2800);
+  background: linear-gradient(to bottom, #058e74, #0f2477);
   border: 1px solid #ddd;
   text-align: center;
   color: #fff;
@@ -4399,7 +4402,7 @@ input[type=number] {
   padding-right: 15px;
 }
 header.fixed .navbar .logo-img img {
-  width: 58px;
+  width: 58px !important;
 }
 .ml-auto, .mx-auto {
   margin-left: auto !important;
@@ -4647,7 +4650,6 @@ header.fixed .navbar .logo-img img {
 .appicon .w-100 {
   overflow: hidden;position: relative;
   border: 3px solid #202f00;
-box-shadow: 0 8px 10px 1px #717171;
 border-radius: 3px;
 }
 .appicon * {
@@ -4674,7 +4676,7 @@ padding: 5px 15px;
 border-radius: 3px;
 }
 .downloadapplink a:hover {
-  background: #c7861b;border-color: #c7861b;color: #fff;letter-spacing: 1px;
+  background: linear-gradient(to bottom, #058e74, #0f2477);border:0;color: #fff;letter-spacing: 1px;
 }
 
 .appicon .w-100:hover .downloadapplink {
