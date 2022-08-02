@@ -4646,13 +4646,16 @@ header.fixed .navbar .logo-img img {
 }
 .appicon .w-100 {
   overflow: hidden;position: relative;
+  border: 3px solid #202f00;
+box-shadow: 0 8px 10px 1px #717171;
+border-radius: 3px;
 }
 .appicon * {
   transition: all .4s linear;
 }
 .downloadapplink {
   position: absolute;
-  width: 100%;
+  width: 0%;
   height: 100%;
   display: flex;
   background: rgba(0, 0, 0, 0.6);
@@ -4661,7 +4664,8 @@ left: 0;
 display: flex;
 align-items: center;
 justify-content: center;
-display: none;
+display: flex;
+visibility: hidden;
 }
 .downloadapplink a {
   text-transform: uppercase;
@@ -4669,8 +4673,14 @@ display: none;
 padding: 5px 15px;
 border-radius: 3px;
 }
+.downloadapplink a:hover {
+  background: #c7861b;border-color: #c7861b;color: #fff;letter-spacing: 1px;
+}
+
 .appicon .w-100:hover .downloadapplink {
-  display: flex;
+  
+  width: 100%;
+  visibility: visible;
 }
 .appicon .w-100:hover img {
   transform: scale(1.1);
