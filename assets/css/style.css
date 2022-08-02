@@ -4745,17 +4745,42 @@ border-radius: 3px;
 }
 .banner-content {
   position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  margin: 0px auto;
-  text-align: center;
-  color: #fff;
-  width: 70%;
+top: 18%;
+left: 0;
+right: 0;
+margin: 0px auto;
+text-align: center;
+color: #fff;
+width: 70%;
 }
 .banner-content h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 40px;
 }
-
+.bannerlist {
+  list-style: none;
+  margin: 0;
+}
+.bannerlist a {
+  text-transform: capitalize;
+font-size: 22px;
+text-shadow: 0 4px #000;
+font-weight: 600;
+margin-bottom: 10px;
+display: block;
+font-family: 'Poppins-semibold';
+transition: all .4s linear;
+}
+.bannerlist a i {
+  color: #c7861b;
+  margin-right: 10px;
+}
+.bannerlist a:hover {
+  color: #c7861b;
+}
+.bannerpattiimg {
+  width: 250px !important;
+margin: 0px auto;
+margin-bottom: 10px;
+}
