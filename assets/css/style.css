@@ -4747,17 +4747,13 @@ border-radius: 3px;
   
 width: 100%;
 }
-.item-banner {
-  background: url('../img/21-01.png') no-repeat;
+.banner-overlay-home {
+  background: url('../img/33-01.png') no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding-top: 200px;
   padding-bottom: 30px;
 
-}
-.item-banner1 {
-  background: url('../img/33-01.png') no-repeat;
-  background-size: cover;
 }
 .banner-content h2 {
   text-transform: uppercase;
@@ -4841,5 +4837,5 @@ margin-bottom: 10px;
     margin-bottom: 30px;
   }
   .bannerlist a {font-size: 14px;}
-  .item-banner {min-height: inherit;}
+  .banner-overlay-home {min-height: inherit;}
 }
