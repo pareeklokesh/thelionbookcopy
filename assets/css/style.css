@@ -4788,3 +4788,11 @@ margin-bottom: 10px;
 .tabcontent p a {
   color: #007bff;
 }
+.secure_sec_card {
+  height: 100%;
+  margin: 0;
+}
+.securegame-section .col-lg-4.col-md-6.col-sm-6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
