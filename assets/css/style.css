@@ -4812,7 +4812,10 @@ transform: skew(20deg);
   z-index: 1;
   overflow: hidden;
 }
-.bannerlist a:hover, .bannerlist a:hover i {
+.bannerlist li:first-child a:hover {
+  color: #fff;
+}
+.bannerlist li:first-child a:hover i {
   color: #fff;
 }
 .bannerpattiimg {
