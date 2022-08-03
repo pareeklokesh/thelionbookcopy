@@ -4744,14 +4744,16 @@ border-radius: 3px;
   position: relative;
 }
 .banner-content {
-  position: absolute;
-top: 20%;
-left: 0;
-right: 0;
-margin: 0px auto;
-text-align: center;
-color: #fff;
-width: 70%;
+  
+width: 100%;
+}
+.banner-overlay-home {
+  background: url('../img/21-01.png') no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
 }
 .banner-content h2 {
   text-transform: uppercase;
@@ -4764,18 +4766,51 @@ width: 70%;
 }
 .bannerlist a {
   text-transform: capitalize;
-font-size: 22px;
+font-size: 18px;
 text-shadow: 0 4px #333;
-font-weight: 600;
+font-weight: 400;
 margin-bottom: 10px;
 display: block;
 font-family: 'Poppins-semibold';
 transition: all .4s linear;
-color: #c7861b;
+color: #fff;
+}
+.bannerlist {
+  position: relative;
+  padding-top: 30px;
 }
 .bannerlist a i {
-  color: #c7861b;
+  color: #fcb800;
   margin-right: 10px;
+}
+.bannerlist::before {
+  content: "";
+display: block;
+height: 100%;
+width: 100%;
+position: absolute;
+left: -31px;
+top: 0;
+background: rgba(0, 0, 0, 0.5);
+z-index: -1;
+transform: skew(20deg);
+}
+.bannerlist::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 100%;
+  background: #fcb800;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.bannerlist {
+  position: relative;
+  padding: 15px 25px;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
 }
 .bannerlist a:hover, .bannerlist a:hover i {
   color: #fff;
@@ -4795,4 +4830,12 @@ margin-bottom: 10px;
 .securegame-section .col-lg-4.col-md-6.col-sm-6 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .bannerlist {
+    margin-bottom: 30px;
+  }
+  .bannerlist a {font-size: 14px;}
+  .banner-overlay-home {min-height: inherit;}
 }
