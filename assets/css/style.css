@@ -4785,3 +4785,6 @@ color: #c7861b;
 margin: 0px auto;
 margin-bottom: 10px;
 }
+.tabcontent p a {
+  color: #007bff;
+}
